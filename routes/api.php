@@ -25,7 +25,7 @@ Route::get('/place', [PlaceController::class,'readAll']);
 Route::get('/user', [UserController::class,'readAll']);
 Route::get('/rate', [RateController::class,'readAll']);
 
-Route::post('register', [UserController::class,'register']);
+Route::post('/register', [UserController::class,'register']);
 Route::post('/login', [UserController::class,'login']);
 
 Route::middleware('auth:sanctum')->group(function () {
